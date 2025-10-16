@@ -1,4 +1,5 @@
 <addons>
+  <!-- O próprio repositório -->
   <addon id="repository.opensubtitles"
          name="OpenSubtitles Repository"
          version="1.0.0"
@@ -8,6 +9,25 @@
       <checksum>https://jimmcy72.github.io/opensubtitles1/addons.xml.md5</checksum>
       <datadir>https://jimmcy72.github.io/opensubtitles1/zips/</datadir>
     </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary>OpenSubtitles Repository</summary>
+      <description>Repositório de legendas OpenSubtitles</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
+
+  <!-- O addon de legendas -->
+  <addon id="service.subtitles.opensubtitles-com"
+         name="OpenSubtitles.org"
+         version="5.3.0"
+         provider-name="OpenSubtitles">
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+      <summary>Download subtitles from OpenSubtitles.org</summary>
+      <description>OpenSubtitles subtitle service</description>
+      <platform>all</platform>
+    </extension>
   </addon>
 </addons>
+
 
